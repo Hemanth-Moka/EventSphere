@@ -10,7 +10,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h2>Hemanth Moka</h2>
+          <h2>Event Sphere</h2>
           <p>Sharing my journey, insights, and stories about technology, personal growth, and creative projects.</p>
           <a href="#articles" className="hero-btn">Explore Articles</a>
         </div>

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home'; // Ensure this matches the actual file/component name
 import Events from './pages/Events';
 
+
 function App() {
   return (
     <Router>
