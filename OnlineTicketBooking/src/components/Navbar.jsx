@@ -18,7 +18,7 @@ const Header = () => {
         <Link to="/testimonials" className="px-3 py-2 hover:text-blue-400">Testimonials</Link>
         <Link to="/faqs" className="px-3 py-2 hover:text-blue-400">FAQs</Link>
         <Link to="/contact" className="px-3 py-2 hover:text-blue-400">Contact</Link>
-        <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Login</button>
+       {/*<button class="btn btn-outline-success my-1 my-sm-0" type="submit">Login</button>*/}
       </nav>
     </header>
   );
