@@ -35,7 +35,7 @@ header nav {
     align-items: center;
 }
 
-header nav a {
+header nav a, header nav button {
     margin-left: 20px;
     font-size: 16px;
     font-weight: 500;
@@ -44,10 +44,13 @@ header nav a {
     padding: 10px 15px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 /* Navbar Hover Effect */
-header nav a:hover {
+header nav a:hover, header nav button:hover {
     background-color: var(--secondary-color);
     color: var(--hover-color);
 }
@@ -70,10 +73,90 @@ header nav a.active {
         margin-top: 100px;
     }
 
-    header nav a {
+    header nav a, header nav button {
         display: block;
         margin: 5px 0;
         font-size: 14px;
         padding: 8px 12px;
     }
+}
+
+/* Login Modal Styles */
+.modal-overlay {
+
+    width: 175%;
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Box */
+.modal-box {
+    background: #fff;
+    padding: 25px;
+    width: 350px;
+    text-align: center;
+    
+    animation: fadeIn 0.3s ease-in-out;
+    
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Modal Inputs */
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.modal-close, .modal-login {
+    padding: 10px 15px;
+    border: none;
+   
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close {
+    background-color: #f44336;
+    color: white;
+}
+
+.modal-close:hover {
+    background-color: #d32f2f;
+}
+
+.modal-login {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.modal-login:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }

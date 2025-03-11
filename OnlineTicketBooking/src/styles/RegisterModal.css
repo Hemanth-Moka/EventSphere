@@ -1,0 +1,136 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 176%;
+    height: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Box */
+.modal-box {
+    background: #fff;
+    padding: 10px;
+    width: 350px;
+    
+
+    text-align: center;
+    position: relative;
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Input Fields */
+.modal-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.modal-input:focus {
+    border-color: #007bff;
+}
+
+/* Password Field with Toggle */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #777;
+}
+
+.toggle-password:hover {
+    color: #333;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.modal-link {
+    background: #007bff;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 48%;
+}
+
+.modal-link:hover {
+    background: #0056b3;
+}
+
+/* Modal Links */
+.modal-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password, .login-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .modal-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
