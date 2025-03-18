@@ -3,7 +3,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 10px 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -30,12 +30,12 @@ header h1 span {
 }
 
 /* Navbar Links */
-header nav {
+nav {
     display: flex;
     align-items: center;
 }
 
-header nav a, header nav button {
+nav a, nav button {
     margin-left: 20px;
     font-size: 16px;
     font-weight: 500;
@@ -50,113 +50,71 @@ header nav a, header nav button {
 }
 
 /* Navbar Hover Effect */
-header nav a:hover, header nav button:hover {
+nav a:hover, nav button:hover {
     background-color: var(--secondary-color);
     color: var(--hover-color);
 }
 
 /* Active Link Styling */
-header nav a.active {
+nav a.active {
     background-color: var(--primary-color);
     color: #fff;
 }
 
-/* Mobile Responsive Navbar */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 15px 20px;
-        text-align: center;
-    }
-
-    header nav {
-        margin-top: 100px;
-    }
-
-    header nav a, header nav button {
-        display: block;
-        margin: 5px 0;
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-}
-
-/* Login Modal Styles */
-.modal-overlay {
-
-    width: 175%;
-    height: 77%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-/* Modal Box */
-.modal-box {
-    background: #fff;
-    padding: 25px;
-    width: 350px;
-    text-align: center;
-    
-    animation: fadeIn 0.3s ease-in-out;
-    
-}
-
-/* Modal Title */
-.modal-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
-
-/* Modal Inputs */
-.modal-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-/* Modal Buttons */
-.modal-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.modal-close, .modal-login {
-    padding: 10px 15px;
-    border: none;
-   
-    font-size: 14px;
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
     cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
     transition: 0.3s;
 }
 
-.modal-close {
-    background-color: #f44336;
-    color: white;
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-.modal-close:hover {
-    background-color: #d32f2f;
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
 }
 
-.modal-login {
-    background-color: var(--primary-color);
-    color: white;
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.modal-login:hover {
-    background-color: var(--secondary-color);
-}
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a, nav button {
+        margin: 10px 0;
+        font-size: 14px;
+        padding: 10px;
+        display: block;
+    }
 }

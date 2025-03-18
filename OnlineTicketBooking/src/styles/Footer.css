@@ -40,7 +40,7 @@ html, body {
 
 .footer-section h2, 
 .footer-section h3 {
-    color: #ff6b81;
+    color: #9e03ec;
 }
 
 .footer-section p {
@@ -60,13 +60,13 @@ html, body {
 }
 
 .footer-section ul li a {
-    color: #ff6b81;
+    color:#9e03ec;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #ff4757;
+    color: #9e03ec;
 }
 
 /* Newsletter Input */
@@ -82,7 +82,7 @@ html, body {
     margin-top: 10px;
     width: 100%;
     padding: 10px;
-    background: #ff6b81;
+    background: #9e03ec;
     color: white;
     border: none;
     cursor: pointer;
@@ -91,7 +91,7 @@ html, body {
 }
 
 .footer-section button:hover {
-    background: #ff4757;
+    background: #ffffff;
 }
 
 /* Social Icons */
@@ -102,13 +102,13 @@ html, body {
 
 .social-icons a {
     margin: 0 10px;
-    color: #ff6b81;
+    color:#9e03ec;
     font-size: 1.5rem;
     transition: transform 0.3s, color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #ff4757;
+    color: #9e03e7;
     transform: scale(1.1);
 }
 

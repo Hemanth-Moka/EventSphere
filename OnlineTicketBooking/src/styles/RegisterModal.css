@@ -1,10 +1,11 @@
 /* Modal Overlay */
 .modal-overlay {
     position: fixed;
-    top: 0;
+    top: 10;
+    bottom:10 ;
     left: 0;
     width: 176%;
-    height: 79%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
