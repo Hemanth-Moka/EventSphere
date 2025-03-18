@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "../styles/Movie.css";
 
 const movies = [
+
   {
-    id: 1,
-    title: "Oppenheimer",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4PZBIpG9XX-40CYV2ZJPtLUQH9DsposMVQ&s",
+   id: 2,
+    title: "Avatar: The Way of Water",
+    image: "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg",
   },
   {
     id: 2,
@@ -13,15 +14,29 @@ const movies = [
     image: "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg",
   },
   {
-    id: 3,
-    title: "Pirates of the Caribbean",
-    image: "https://m.media-amazon.com/images/M/MV5BMTYyMTcxNzc5M15BMl5BanBnXkFtZTgwOTg2ODE2MTI@._V1_.jpg",
+    id: 2,
+    title: "Avatar: The Way of Water",
+    image: "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg",
   },
   {
-    id: 4,
-    title: "Spider-Man: No Way Home",
-    image: "https://comenian.org/wp-content/uploads/2022/01/spidermannowayhomeposter.jpg",
+    id: 2,
+    title: "Avatar: The Way of Water",
+    image: "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg",
   },
+
+  {
+    id: 2,
+    title: "Avatar: The Way of Water",
+    image: "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg",
+  },
+
+  {
+    id: 2,
+    title: "Avatar: The Way of Water",
+    image: "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_.jpg",
+  },
+  
+ 
 ];
 
 export default function Movies() {
