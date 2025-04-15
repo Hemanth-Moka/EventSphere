@@ -78,15 +78,16 @@ nav a.active {
 }
 
 .hamburger.open div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(10px, 15px);
 }
 
 .hamburger.open div:nth-child(2) {
     opacity: 0;
+    transform: translateX(-50%);
 }
 
 .hamburger.open div:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(4px, -7px);
 }
 
 /* Mobile Responsive Navbar */

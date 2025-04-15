@@ -14,6 +14,7 @@ const Header = () => {
       {/* Logo and Title */}
       <h1 className="text-3xl font-bold">
         Event<span className="text-blue-400">Sphere</span>
+        
       </h1>
 
       {/* Hamburger Menu for Mobile */}

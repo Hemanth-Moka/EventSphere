@@ -40,7 +40,7 @@ html, body {
 
 .footer-section h2, 
 .footer-section h3 {
-    color: rgba(186, 84, 237, 0.874);
+    color:hsl(35, 84%, 64%);
 }
 
 .footer-section p {
@@ -60,13 +60,13 @@ html, body {
 }
 
 .footer-section ul li a {
-    color:#9e03ec;
+    color:hsl(35, 84%, 64%);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #9e03ec;
+    color:hsl(35, 84%, 64%);
 }
 
 /* Newsletter Input */

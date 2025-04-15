@@ -1,23 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../styles/Home.css";
 
-
 const Home = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode");
+  };
+
   return (
-    <div>
-      {/* Navbar */}
-      
+    <div className={darkMode ? "dark" : ""}>
+    
+
 
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-
-        <h2>Book Your Tickets Hassle-Free!</h2>
-
-       <p>Movies, Events, and Travel – all in one place. <br></br>Easy booking, best prices, and secure payments.</p>
-
-         
-         
+          <button className="dark-mode-btn" onClick={toggleDarkMode}>
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+          <h2>Book Your Tickets Hassle-Free!</h2>
+          <p>Movies, Events, and Travel – all in one place.<br></br>Easy booking, best prices, and secure payments.</p>
           <a href="#booking" className="hero-btn">Book Now</a>
         </div>
       </section>
@@ -37,11 +41,11 @@ const Home = () => {
         <h3>Popular Movies & Events</h3>
         <div className="popular-list">
           <div className="item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW4qTXimEiE7Bfe_a2qiazuhuvAan4pVEJg&s" alt="Movie 1" />
+            <img src="1.jpg" alt="Movie 1" />
             <p>Movie Title</p>
           </div>
           <div className="item">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/048/928/small/microphone-neon-sign-live-music-bright-emblem-light-mic-on-the-brick-wall-background-vector.jpg" alt="Concert" />
+            <img src="https://via.placeholder.com/150" alt="Concert" />
             <p>Live Concert</p>
           </div>
         </div>
@@ -65,23 +69,23 @@ const Home = () => {
         <cite>- Rahul Sharma</cite>
       </section>
 
+      {/* Description Section */}
+      <section id="description">
+        <p>We provide an easy and secure way to book your favorite tickets online.</p>
+        <p>Enjoy a seamless experience with multiple payment options and instant e-tickets.</p>
+      </section>
+
       {/* Contact & Support */}
       <section id="contact">
-    <div class="contact-container">
-        <h3>Need Help?</h3>
-        <p>Describe your issue below, and our team will assist you as soon as possible.</p>
-        <form action="">
-            <input type="text" id="query" name="query" placeholder="Enter your query..." required/>
-            <button type="submit" class="hero-btn">Submit & Contact Support</button>
-        </form>
-    </div>
-
-
-</section>
-
-
-      {/* Footer */}
-    
+        <div className="contact-container">
+          <h3>Need Help?</h3>
+          <p>Describe your issue below, and our team will assist you as soon as possible.</p>
+          <form>
+            <input type="text" id="query" name="query" placeholder="Enter your query..." required />
+            <button type="submit" className="hero-btn">Submit & Contact Support</button>
+          </form>
+        </div>
+      </section>
     </div>
   );
 };
